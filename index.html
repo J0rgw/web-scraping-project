@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping Project</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-4">Web Scraping Tool</h1>
+        <form id="scrape-form" class="mb-4">
+            <div class="mb-4">
+                <label for="url-input" class="block text-sm font-medium text-gray-700">URL:</label>
+                <input type="text" id="url-input" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter the URL" required>
+            </div>
+            <div class="mb-4">
+                <label for="xpath-input" class="block text-sm font-medium text-gray-700">XPath:</label>
+                <input type="text" id="xpath-input" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter the XPath" required>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Scrape</button>
+        </form>
+        <div id="results" class="mt-4"></div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
