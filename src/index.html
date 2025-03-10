@@ -6,21 +6,21 @@
     <title>Web Scraping Project</title>
     <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 p-6">
-    <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md">
-        <h1 class="text-2xl font-bold mb-4">Web Scraping Tool</h1>
+<body class="min-h-screen p-6 dark bg-gradient-to-b from-gray-900 to-black">
+    <div class="max-w-xl mx-auto backdrop-blur-lg bg-black bg-opacity-40 p-6 rounded-lg shadow-lg border border-yellow-600/40">
+        <h1 class="text-2xl font-bold mb-4 text-yellow-300 text-center">Web Scraping Tool</h1>
         <form id="scrape-form" class="mb-4">
             <div class="mb-4">
-                <label for="url-input" class="block text-sm font-medium text-gray-700">URL:</label>
-                <input type="text" id="url-input" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter the URL" required>
+                <label for="url-input" class="block text-sm font-medium text-yellow-200">URL:</label>
+                <input type="text" id="url-input" class="mt-1 block w-full p-2 bg-black bg-opacity-50 backdrop-blur-sm border border-yellow-500/40 rounded-md text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="Enter the URL" required>
             </div>
             <div class="mb-4">
-                <label for="xpath-input" class="block text-sm font-medium text-gray-700">XPath:</label>
-                <input type="text" id="xpath-input" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter the XPath" required>
+                <label for="xpath-input" class="block text-sm font-medium text-yellow-200">XPath:</label>
+                <input type="text" id="xpath-input" class="mt-1 block w-full p-2 bg-black bg-opacity-50 backdrop-blur-sm border border-yellow-500/40 rounded-md text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="Enter the XPath" required>
             </div>
-            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Scrape</button>
+            <button type="submit" class="w-full bg-gradient-to-r from-yellow-600 to-yellow-800 text-white p-2 rounded-md hover:from-yellow-500 hover:to-yellow-700 shadow-md transition duration-300">Scrape</button>
         </form>
-        <div id="results" class="mt-4"></div>
+        <div id="results" class="mt-4 text-yellow-100 overflow-auto"></div>
     </div>
     <script src="./js/script.js"></script>
 </body>
